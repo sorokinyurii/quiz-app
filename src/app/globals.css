@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    border-top-color: #ff6363;
+  }
+  10% {
+    border-top-color: #ffac33;
+  }
+  20% {
+    border-top-color: #33d9b2;
+  }
+  30% {
+    border-top-color: #33a8ff; 
+  }
+  40% {
+    border-top-color: #ff6363; 
+  }
+  50% {
+    border-top-color: #ff6363;
+  }
+  60% {
+    border-top-color: #ffac33;
+  }
+  70% {
+    border-top-color: #33d9b2;
+  }
+  80% {
+    border-top-color: #33a8ff; 
+  }
+  90% {
+    border-top-color: #ff6363; 
+  }
+  100% {
+    border-top-color: #ffac33;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top: 6px solid #ff6363;
+  animation: spin 0.8s linear infinite, colorShift 3s ease infinite;
+  background-color: transparent;
+}
+
