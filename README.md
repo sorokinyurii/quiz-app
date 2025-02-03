@@ -23,3 +23,5 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - The quiz consists of 9 categories, each containing 10 questions. Players have 10 seconds to answer each question.
 
 - For the congratulatory effect, the project utilizes react-confetti and react-use.
+
+![image](https://github.com/user-attachments/assets/7d928712-dce2-42ae-b14a-44aed70830eb)
