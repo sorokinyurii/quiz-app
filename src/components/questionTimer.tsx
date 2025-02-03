@@ -35,6 +35,6 @@ export const QuestionTimer: React.FC<Props> = ({ onTimeUp, setTimePerQuestion, i
       alt='timer'
       width={30}
     />
-    <p> {seconds} seconds</p>
+    <p className="font-second"> 00:{seconds < 10 ? `0${seconds}` : seconds}</p>
     </div>);
 };

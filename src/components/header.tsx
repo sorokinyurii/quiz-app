@@ -1,3 +1,5 @@
+'use client'
+
 import { usePointsStore } from "@/store";
 import Image from "next/image";
 import Link from "next/link";

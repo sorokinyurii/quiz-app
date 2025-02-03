@@ -1,4 +1,5 @@
 ## Getting Started
+Check that you use node >= v18
 
 First, run the development server:
 
